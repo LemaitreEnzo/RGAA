@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+header {
+    display: flex;
+    position: relative;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+
+body {
+    height: 100vh;
+}
+
+article {
+    padding: 3%;
+    height: 88vh;
+}
+
+.content {
+    background-color: none;
+}

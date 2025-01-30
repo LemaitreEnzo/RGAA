@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/articles.css">
     <title>Introduction au JavaScript</title>
 </head>
+
 <body>
     <header>
         <h1>Tech'n'Tips by La Manu</h1>
@@ -15,24 +18,30 @@
                 <li><a href="../../index.html">Accueil</a></li>
                 <li><a href="../../index.html#tutoriels">Tutoriels</a></li>
                 <li><a href="../../index.html#contact">Contact</a></li>
+                <li><a href="./accessibilité.html">Accessibilité</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <article>
-            <h2>Introduction au JavaScript</h2>
-            <p>Comprenez les bases du JavaScript et apprenez à rendre vos pages interactives.</p>
-            <p>Le JavaScript est un langage de programmation utilisé pour créer des pages web interactives. Il permet de manipuler le DOM (Document Object Model), de gérer les événements, de valider les formulaires, et bien plus encore.</p>
-            <p>Voici un exemple de code JavaScript de base :</p>
-            <pre><code>document.addEventListener('DOMContentLoaded', function() {
-    document.querySelector('button').addEventListener('click', function() {
-        alert('Bouton cliqué !');
-    });
-});</code></pre>
+            <div class="content">
+                <h2>Introduction au JavaScript</h2>
+                <p>Comprenez les bases du JavaScript et apprenez à rendre vos pages interactives.</p>
+                <p>Le JavaScript est un langage de programmation utilisé pour créer des pages web interactives. Il
+                    permet de manipuler le DOM (Document Object Model), de gérer les événements, de valider les
+                    formulaires, et bien plus encore.</p>
+                <p>Voici un exemple de code JavaScript de base :</p>
+                <pre><code>document.addEventListener('DOMContentLoaded', function() {
+        document.querySelector('button').addEventListener('click', function() {
+            alert('Bouton cliqué !');
+        });
+    });</code></pre>
+            </div>
         </article>
     </main>
     <footer>
         <p>&copy; 2024 Tech'n'Tips by La Manu</p>
     </footer>
 </body>
+
 </html>
