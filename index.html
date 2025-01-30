@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Tech'n'Tips by La Manu</title>
+  </head>
+  <body id="accueil">
+    <header>
+      <h1>Tech'n'Tips by La Manu</h1>
+      <nav>
+        <ul>
+          <li><a href="#accueil">Accueil</a></li>
+          <li><a href="#tutoriels">Tutoriels</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="hero-banner">
+        <div class="overlay" aria-hidden="true"></div>
+        <div class="content-hero">
+          <h2 class="title-hero">
+            Apprenez les compétences numériques <span>essentielles !</span>
+          </h2>
+          <button class="pink-btn" aria-label="Commencez ici">
+            Commencez ici <i class="fa-solid fa-rocket" aria-hidden="true"></i>
+          </button>
+        </div>
+      </section>
+      <section class="tutos" id="tutoriels">
+        <div class="filters">
+          <span>Filtres</span>
+          <hr />
+          <form action="" method="GET" id="filters-form">
+            <div>
+              <input
+                type="checkbox"
+                name="filter"
+                id="front-end"
+                value="front-end"
+              />
+              <label for="front-end">Développement Front </label>
+            </div>
+            <div>
+              <input type="checkbox" name="filter" id="design" value="design" />
+              <label for="design">Design</label>
+            </div>
+            <div>
+              <input
+                type="checkbox"
+                name="filter"
+                id="beginner"
+                value="beginner"
+              />
+              <label for="beginner"> Programmation pour débutant </label>
+            </div>
+          </form>
+        </div>
+        <div class="list-tutos">
+          <div>
+            <span>Les tutos les plus populaires</span>
+            <hr />
+          </div>
+          <div class="list">
+            <article>
+              <div class="head-img">
+                <img src="./assets/img/header.png" alt="Image tutoriel HTML de base" />
+              </div>
+              <div class="content">
+                <div>
+                  <h3>Tutoriel HTML de base</h3>
+                  <p>
+                    Découvrez les fondamentaux du HTML et créez des pages web
+                    avec des balises sémantiques.
+                  </p>
+                </div>
+                <a href="#">Lire plus</a>
+              </div>
+            </article>
+            <article>
+              <div class="head-img">
+                <img src="./assets/img/header.png" alt="Image tutoriel CSS pour les débutants" />
+              </div>
+              <div class="content">
+                <div>
+                  <h3>CSS pour les débutants</h3>
+                  <p>
+                    Apprenez à styliser vos pages web avec des sélecteurs CSS, des couleurs, et bien plus encore.
+                  </p>
+                </div>
+                <a href="#">Lire plus</a>
+              </div>
+            </article>
+            <article>
+              <div class="head-img">
+                <img src="./assets/img/header.png" alt="Image introduction au JavaScript" />
+              </div>
+              <div class="content">
+                <div>
+                  <h3>Introduction au JavaScript</h3>
+                  <p>
+                    Comprenez les bases du JavaScript et apprenez à rendre vos pages interactives.
+                  </p>
+                </div>
+                <a href="#">Lire plus</a>
+              </div>
+            </article>
+            <article>
+              <div class="head-img">
+                <img src="./assets/img/header.png" alt="Image manipulation du DOM en JavaScript" />
+              </div>
+              <div class="content">
+                <div>
+                  <h3>Manipuler le DOM en JavaScript</h3>
+                  <p>
+                    Un guide sur la façon de modifier le Document Object Model (DOM) pour rendre les pages web interactives.
+                  </p>
+                </div>
+                <a href="#">Lire plus</a>
+              </div>
+            </article>
+            <article>
+              <div class="head-img">
+                <img src="./assets/img/header.png" alt="Image choix des polices et couleurs pour votre site web" />
+              </div>
+              <div class="content">
+                <div>
+                  <h3>Choisir les bonnes polices et couleurs pour votre site web</h3>
+                  <p>
+                    Un guide pratique pour les débutants sur la typographie et la théorie des couleurs dans le design web.
+                  </p>
+                </div>
+                <a href="#">Lire plus</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-content" id="contact">
+        <div class="footer-left">
+          <img src="./assets/img/logo-la-manu.png" alt="Logo La Manu"/>
+          <h3>Menu :</h3>
+          <ul>
+            <li><a href="#accueil">Accueil</a></li>
+            <li><a href="#tutoriels">Tutoriels</a></li>
+          </ul>
+        </div>
+        <div class="footer-right">
+          <h3>Contact :</h3>
+          <form action="" id="contact-form">
+            <div class="form-group">
+              <div class="form-control">
+                <label for="email">Email :</label>
+                <input type="email" id="email" placeholder="Votre Email" />
+              </div>
+              <div class="form-control">
+                <label for="objet">Objet :</label>
+                <input type="text" id="objet" placeholder="Votre objet" />
+              </div>
+            </div>
+            <div class="form-group form-control">
+              <label for="message">Message :</label>
+              <textarea name="message" id="message" placeholder="Message ..."></textarea>
+            </div>
+            <div class="form-full-width">
+              <input type="radio" id="conditions" required />
+              <label for="conditions">J'accepte les conditions d'utilisation</label>
+            </div>
+            <button type="submit" class="pink-btn">Envoyer</button>
+          </form>
+        </div>
+      </div>
+      <small>Copyright - La Manu 2024</small>
+    </footer>
+  </body>
+</html>
