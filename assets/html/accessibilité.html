@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Accessibilité - Tech'n'Tips by La Manu</title>
+</head>
+<body>
+    <header>
+        <h1>Tech'n'Tips by La Manu</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="tutoriels.html">Tutoriels</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <h2>Accessibilité</h2>
+            <p>Chez Tech'n'Tips by La Manu, nous nous engageons à rendre notre site web accessible à tous, y compris aux personnes en situation de handicap. Nous suivons les directives du RGAA (Référentiel Général d'Amélioration de l'Accessibilité) pour garantir une expérience utilisateur optimale pour tous.</p>
+            <h3>Principes de base de l'accessibilité</h3>
+            <ul>
+                <li>Utilisation de balises HTML sémantiques pour structurer le contenu.</li>
+                <li>Ajout de textes alternatifs pour les images et les éléments multimédias.</li>
+                <li>Contraste suffisant entre le texte et l'arrière-plan pour une meilleure lisibilité.</li>
+                <li>Navigation au clavier pour permettre l'accès à toutes les fonctionnalités sans utiliser de souris.</li>
+                <li>Utilisation de rôles ARIA pour améliorer l'accessibilité des éléments interactifs.</li>
+            </ul>
+            <h3>Nos engagements</h3>
+            <p>Nous nous engageons à :</p>
+            <ul>
+                <li>Effectuer des tests réguliers pour vérifier la conformité de notre site avec les normes d'accessibilité.</li>
+                <li>Apporter des améliorations continues pour garantir une accessibilité optimale.</li>
+                <li>Prendre en compte les retours des utilisateurs pour améliorer l'expérience utilisateur.</li>
+            </ul>
+            <h3>Contact</h3>
+            <p>Si vous rencontrez des difficultés d'accès à notre site ou si vous avez des suggestions pour améliorer notre accessibilité, n'hésitez pas à nous contacter :</p>
+            <form action="" id="contact-form">
+                <div class="form-group">
+                    <div class="form-control">
+                        <label for="email">Email :</label>
+                        <input type="email" id="email" placeholder="Votre Email" />
+                    </div>
+                    <div class="form-control">
+                        <label for="objet">Objet :</label>
+                        <input type="text" id="objet" placeholder="Votre objet" />
+                    </div>
+                </div>
+                <div class="form-group form-control">
+                    <label for="message">Message :</label>
+                    <textarea name="message" id="message" placeholder="Message ..."></textarea>
+                </div>
+                <div class="form-full-width">
+                    <input type="radio" id="conditions" required />
+                    <label for="conditions">J'accepte les conditions d'utilisation</label>
+                </div>
+                <button type="submit" class="pink-btn">Envoyer</button>
+            </form>
+        </article>
+    </main>
+    <footer>
+        <p>&copy; 2024 Tech'n'Tips by La Manu</p>
+    </footer>
+</body>
+</html>

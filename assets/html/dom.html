@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Manipuler le DOM en JavaScript</title>
+</head>
+<body>
+    <header>
+        <h1>Tech'n'Tips by La Manu</h1>
+        <nav>
+            <ul>
+                <li><a href="../../index.html">Accueil</a></li>
+                <li><a href="../../index.html#tutoriels">Tutoriels</a></li>
+                <li><a href="../../index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <h2>Manipuler le DOM en JavaScript</h2>
+            <p>Un guide sur la façon de modifier le Document Object Model (DOM) pour rendre les pages web interactives.</p>
+            <p>Le DOM est une représentation en mémoire de la structure d'un document HTML. Il permet de manipuler les éléments de la page à l'aide de JavaScript.</p>
+            <p>Voici un exemple de code JavaScript pour manipuler le DOM :</p>
+            <pre><code>document.addEventListener('DOMContentLoaded', function() {
+    var element = document.createElement('p');
+    element.textContent = 'Paragraphe ajouté dynamiquement';
+    document.body.appendChild(element);
+});</code></pre>
+        </article>
+    </main>
+    <footer>
+        <p>&copy; 2024 Tech'n'Tips by La Manu</p>
+    </footer>
+</body>
+</html>

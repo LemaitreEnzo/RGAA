@@ -1,19 +1,38 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+:root {
+  --rose: #e10098;
+  --background-color: #f4f4f4;
+  --text-color: #333;
+  --header-background: rgba(51, 5, 141, 0.7);
+  --footer-background: #33058d;
+  --button-background: #e10098;
+  --button-text-color: #fff;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
+
 body {
   width: 100%;
   height: 100%;
-  background-color: #f4f4f4;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: "Roboto", serif;
+  font-size: 1em;
+  line-height: 1.5;
 }
+
 .title-hero,
 h1 {
   font-family: "Montserrat", serif;
   font-size: 2.5em;
 }
+
 h2,
 h3,
 p,
@@ -24,6 +43,7 @@ form {
   font-family: "Roboto", serif;
   font-size: 1.5em;
 }
+
 p,
 a,
 nav,
@@ -31,17 +51,20 @@ small,
 form {
   font-size: 1em;
 }
+
 .tutos span {
   font-family: "Roboto", serif;
   font-size: 1.5em;
 }
+
 .tutos hr {
   width: 30%;
   height: 3px;
   border: none;
-  background-color: #e10098;
+  background-color: var(--rose);
   margin: 10px 0px;
 }
+
 header {
   display: flex;
   position: fixed;
@@ -53,27 +76,32 @@ header {
   padding: 0 25px;
   height: 70px;
   color: #fff;
-  background-color: rgba(51, 5, 141, 0.7);
+  background-color: var(--header-background);
   z-index: 999;
 }
+
 header a {
   color: #fff;
   text-decoration: none;
 }
+
 h1 {
   width: 30%;
   font-size: 1.5em;
   font-weight: normal;
 }
+
 nav {
   width: 70%;
   display: flex;
   justify-content: end;
 }
+
 nav ul {
   display: flex;
   gap: 25px;
 }
+
 ul {
   list-style: none;
 }
@@ -89,6 +117,7 @@ section.hero-banner {
   background-size: cover;
   background-repeat: no-repeat;
 }
+
 div.overlay {
   position: absolute;
   left: 0;
@@ -97,6 +126,7 @@ div.overlay {
   z-index: 1;
   background: linear-gradient(90deg, #33058d40 30%, #e1009840 70%);
 }
+
 .content-hero {
   z-index: 99;
   width: 70%;
@@ -104,16 +134,18 @@ div.overlay {
   display: flex;
   flex-direction: column;
 }
+
 .content-hero span {
-  color: #e10098;
+  color: var(--rose);
 }
+
 button.pink-btn {
   align-self: flex-end;
   padding: 15px 25px;
-  background: #e10098;
+  background: var(--button-background);
   border: none;
   border-radius: 5px;
-  color: #fff;
+  color: var(--button-text-color);
 }
 
 section.tutos {
@@ -121,38 +153,47 @@ section.tutos {
   margin: 10px 0;
   padding: 0 25px;
 }
+
 div.filters {
   width: 20%;
 }
+
 form#filters-form {
   display: flex;
   flex-direction: column;
   row-gap: 10px;
 }
+
 div.list-tutos {
   width: 80%;
 }
+
 .list {
   display: grid;
   gap: 20px;
   grid-template-columns: repeat(3, 1fr);
 }
+
 article {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
   height: 40vh;
   border-radius: 5px;
+  width: 100%;
   background-color: #fff;
 }
+
 article .head-img {
   height: 40%;
   width: 100%;
 }
+
 article .head-img img {
   width: 100%;
   border-radius: 5px 5px 0 0;
   height: 100%;
   object-fit: cover;
 }
+
 article .content {
   padding: 10px;
   height: 60%;
@@ -160,25 +201,28 @@ article .content {
   flex-direction: column;
   justify-content: space-between;
 }
+
 article .content a {
-  color: #e10098;
+  color: var(--rose);
   align-self: flex-end;
   text-decoration: none;
 }
 
 footer {
   color: #fff;
-  background-color: #33058d;
+  background-color: var(--footer-background);
   padding: 20px 0 0 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 20px;
 }
+
 footer a {
   color: #fff;
   text-decoration: none;
 }
+
 footer .footer-content {
   display: flex;
   justify-content: space-between;
@@ -186,32 +230,161 @@ footer .footer-content {
   width: 100%;
   padding: 0 25px;
 }
+
 form#contact-form {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
 }
+
 .footer-left,
 .footer-right {
   width: 35%;
 }
+
 .form-group {
   width: 45%;
 }
+
 .form-control {
   display: flex;
   flex-direction: column;
   margin: 10px 0;
 }
+
 .form-full-width {
   width: 100%;
 }
+
 .form-control input,
 .form-control textarea {
   padding: 10px;
   height: 35px;
   border-radius: 5px;
 }
+
 .form-control textarea {
   height: 100%;
+}
+
+
+@media (max-width: 1200px) {
+  .list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+  }
+
+  h1 {
+    width: 100%;
+    text-align: center;
+    font-size: 1.2em;
+  }
+
+  nav {
+    width: 100%;
+    justify-content: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  section.hero-banner {
+    height: 60vh;
+    padding: 0 5%;
+  }
+
+  .content-hero {
+    width: 100%;
+    text-align: center;
+  }
+
+  button.pink-btn {
+    align-self: center;
+  }
+
+  section.tutos {
+    flex-direction: column;
+    padding: 0 10px;
+  }
+
+  div.filters {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  div.list-tutos {
+    width: 100%;
+  }
+
+  .list {
+    grid-template-columns: 1fr;
+  }
+
+  footer .footer-content {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .footer-left,
+  .footer-right {
+    width: 100%;
+  }
+
+  .form-group {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .title-hero,
+  h1 {
+    font-size: 1.5em;
+  }
+
+  h2,
+  h3,
+  p,
+  a,
+  small,
+  nav,
+  form {
+    font-size: 1.2em;
+  }
+
+  p,
+  a,
+  nav,
+  small,
+  form {
+    font-size: 0.9em;
+  }
+
+  .tutos span {
+    font-size: 1.2em;
+  }
+
+  .tutos hr {
+    width: 50%;
+  }
+
+  button.pink-btn {
+    padding: 10px 20px;
+  }
+
+  article {
+    height: auto;
+  }
+
+  article .content {
+    height: auto;
+  }
 }
